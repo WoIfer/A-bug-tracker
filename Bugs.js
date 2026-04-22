@@ -35,7 +35,7 @@ function loadIssues() {
         <div><strong>Title:</strong> ${issue.summary}</div>
         <div><strong>Status:</strong> ${issue.status}</div>
         <div><strong>Priority:</strong> ${issue.priority}</div>
-        <button onclick="toggleDetails(${issue.id})">View Details</button>
+        <button onclick="toggleDetails(${issue.id})" class="viewAll">View Details</button>
         
         <div class="issue-details" id="details-${issue.id}" style="display:none;">
           <p><strong>Description:</strong> ${issue.description}</p>
@@ -47,8 +47,8 @@ function loadIssues() {
           <p><strong>Resolution Summary:</strong> ${issue.resolutionSummary || "Not Available"}</p>
 
           <div style="text-align:right; margin-top:10px;">
-            <button onclick="editIssue(${issue.id})">Edit</button>
-            <button onclick="deleteIssue(${issue.id})">Delete</button>
+            <button onclick="editIssue(${issue.id})" class="viewAll">Edit</button>
+            <button onclick="deleteIssue(${issue.id})" class="viewAll">Delete</button>
           </div>
         </div>
       </div>`;
