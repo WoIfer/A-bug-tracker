@@ -1,0 +1,166 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.navBar{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    height: 85px;
+    padding: 10px;
+    background-color: rgb(165, 160, 160);
+    gap: 20px;
+}
+.navLeft{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.navMid{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.navRight{
+    justify-self: end;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Back button */
+.backButton {
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.95rem;
+}
+
+.backButton:hover {
+    background-color: gray;
+    color: white;
+    text-decoration: none;
+}
+.logo img {
+    max-height: 70px; 
+    width: 70px;
+    border-radius: 37px;
+    margin-left: 22px;
+}
+.companyName{
+    font-weight: 800;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.searchForm{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+}
+.searchButton{
+    position: absolute;
+    right: 5px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 6px 15px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+.searchBar{
+    width: 100%;
+    padding: 10px 60px 10px 20px;
+    border-radius: 25px;
+    border: 2px solid black;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+}
+.searchButton:hover {
+    background-color: gray;
+}
+.modeTog button {
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    border: 2px solid black;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+/* modeTog Img*/
+.modeTog button img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*Dark hover*/
+body:not(.darkMode) .modeTog button:hover {
+    background-color: #1c1c1c;
+    border-color: black;
+    transform: scale(1.3);    
+}
+/*Light hover*/
+body.darkMode .modeTog button:hover {
+    background-color: rgb(165, 160, 160);
+    border-color: white;
+    transform: scale(1.3);     
+}
+.homePageStruct{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center; 
+    gap: 30px; 
+    padding: 50px; 
+    margin-top: 40px;
+}
+.homeCards{
+    background-color: rgb(165, 160, 160);
+    border: 2px solid black;
+    border-radius: 12px;
+    padding: 20px;
+    gap: 15px;
+    text-align: center;
+    align-items: center;
+}
+.homeCards img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 2px solid black;
+    margin-bottom: 15px;
+}
+.homeCards h2 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.viewAll {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background 0.4s;
+}
+
+.viewAll:hover {
+    background-color: gray;
+}

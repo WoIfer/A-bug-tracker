@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Issue - Bug Reporting System</title>
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="Edit.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navBar">
+    <div class="navLeft">
+        <div class="logo">
+            <img src="Images/WhatsApp Image 2026-04-18 at 17.04.15.jpeg" alt="Logo">
+        </div>
+        <div class="companyName">
+            <h1>BUG_HUNTER</h1>
+        </div>
+    </div>
+    <div class="navRight">
+        <button class="backButton" onclick="history.back()">← Back</button>
+    </div>
+</nav>
+
+<div class="container mt-5">
+  <h2>Edit Issue</h2>
+  <nav>
+     <a href="Bugs.html" class="viewAll">Back to Dashboard</a>
+  </nav>
+
+  <form id="editIssueForm" class="mt-3">
+     <h4 id="issueIdTitle"></h4>
+
+     <h5>Issue Details</h5>
+     <input id="issueSummary" class="form-control mb-2" placeholder="Summary">
+     <textarea id="issueDesc" class="form-control mb-2" placeholder="Description"></textarea>
+     <input id="issueProject" class="form-control mb-2" placeholder="Project">
+     <input id="issueIdentifiedBy" class="form-control mb-2" placeholder="Identified By">
+
+     <h5>Assignment & Priority</h5>
+     <input id="issueAssignedTo" class="form-control mb-2" placeholder="Assign To">
+    
+     <select title="status" id="issueStatus" class="form-control mb-2">
+         <option>open</option>
+         <option>resolved</option>
+         <option>overdue</option>
+     </select>
+    
+     <select title="priority" id="issuePriority" class="form-control mb-2">
+         <option>low</option>
+         <option>medium</option>
+         <option>high</option>
+     </select>
+ 
+     <h5>Dates & Resolution</h5>
+    <input title="target" id="issueTargetDate" type="date" class="form-control mb-2">
+     <input title="date identified" id="issueDateIdentified" type="date" class="form-control mb-2">
+     <input title="resolution" id="issueResolutionDate" type="date" class="form-control mb-2">
+     <textarea id="issueResolutionSummary" class="form-control mb-2" placeholder="Resolution Summary"></textarea>
+
+     <button type="button" class="viewAll" onclick="updateIssue()">Update Issue</button>
+     <a href="home.html" class="viewAll" style="margin-left: 10px;">Cancel</a>
+  </form>
+  </div>
+
+  <script src="local storage.js"></script>
+  <script src="Edit.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

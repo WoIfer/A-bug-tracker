@@ -1,0 +1,99 @@
+/* General page styling */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #333;
+}
+
+/* Container styling */
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Page title */
+h2 {
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #2c3e50;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Issue ID title */
+#issueIdTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #1c1c1c;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Form container */
+#editIssueForm {
+  background: rgb(165, 160, 160);
+  padding: 25px;
+  border-radius: 12px;
+  border: 2px solid black;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Section headings */
+#editIssueForm h5 {
+  margin-top: 25px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #1c1c1c;
+  border-bottom: 2px solid black;
+  padding-bottom: 5px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Inputs and textareas */
+#editIssueForm input,
+#editIssueForm textarea,
+#editIssueForm select {
+  border-radius: 8px;
+  border: 2px solid black;
+  margin-bottom: 12px;
+  padding: 10px;
+  background-color: white;
+  transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#editIssueForm input:focus,
+#editIssueForm textarea:focus,
+#editIssueForm select:focus {
+  border-color: black;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  outline: none;
+}
+
+/* Buttons */
+.viewAll {
+  display: inline-block;
+  padding: 10px 25px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.viewAll:hover {
+  background-color: gray;
+  text-decoration: none;
+  color: white;
+}
+
+/* Layout tweaks */
+textarea {
+  min-height: 100px;
+}

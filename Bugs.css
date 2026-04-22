@@ -1,0 +1,249 @@
+/* General page styling */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #333;
+}
+
+
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+h2 {
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #2c3e50;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h4 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 600;
+}
+
+.pageHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+
+.pageHeader > div {
+  flex: 1;
+}
+
+.statsRow {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.totalIssues,
+.openIssues,
+.resolvedIssues,
+.overdueIssues {
+  background-color: rgb(165, 160, 160);
+  border: 2px solid black;
+  padding: 8px 12px;
+  border-radius: 8px;
+  text-align: center;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+
+.Search {
+  width: 100%;
+  padding: 10px 15px;
+  border: 2px solid black;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.Search:focus {
+  background-color: rgb(165, 160, 160);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+
+#issuesList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+
+.issue-card {
+  background-color: rgb(165, 160, 160);
+  border: 2px solid black;
+  border-radius: 12px;
+  padding: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+}
+
+.issue-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.issue-header {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid black;
+  color: #1c1c1c;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.issue-card div {
+  margin: 8px 0;
+  font-size: 0.95rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.issue-card strong {
+  color: #1c1c1c;
+}
+
+.issue-details {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 2px solid black;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.issue-details p {
+  margin: 8px 0;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+
+.addBugBtn {
+  background-color: black;
+  color: white;
+  border: 2px solid black;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  white-space: nowrap;
+}
+
+.addBugBtn:hover {
+  background-color: gray;
+}
+
+.modal-footer {
+  padding: 15px;
+}
+
+.issue-card button:hover {
+  background-color: gray;
+}
+
+.btn {
+  border-radius: 25px;
+  padding: 8px 20px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.btn-primary {
+  background-color: black;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: gray;
+}
+
+.btn-secondary {
+  background-color: gray;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #555;
+}
+
+
+.modal-content {
+  border: 2px solid black;
+  border-radius: 12px;
+  background-color: rgb(165, 160, 160);
+}
+
+.modal-header {
+  background-color: rgb(165, 160, 160);
+  border-bottom: 2px solid black;
+  padding: 15px;
+}
+
+.modal-title {
+  font-weight: 600;
+  color: #1c1c1c;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.modal-body {
+  padding: 20px;
+  background-color: white;
+}
+
+.btn-close {
+  filter: brightness(0);
+}
+
+/* Modal form styling */
+.modal-body .form-control,
+.modal-body .form-label {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.modal-body .form-control {
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 8px 12px;
+}
+
+.modal-body .form-control:focus {
+  border-color: black;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.modal-body .form-label {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
