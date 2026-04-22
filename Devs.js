@@ -62,6 +62,8 @@ function addDeveloper(name, surname, email, username) {
   people.push(newPerson);
   setData("people", people);
   loadPeople();
+  
+  document.getElementById("addDevForm").reset();
   const modal = bootstrap.Modal.getInstance(document.getElementById("addDevModal"));     
   modal.hide();
 }

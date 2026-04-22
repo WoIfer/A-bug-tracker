@@ -58,8 +58,6 @@ function addProject(name) {
   }
 
  
-  document.getElementById("projectName").value = "";
-
   const newproject = {
     id: projects.length > 0 ? Math.max(...projects.map(p => p.id)) + 1 : 1,
     name: projectName
