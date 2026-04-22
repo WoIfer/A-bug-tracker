@@ -29,6 +29,10 @@ loginForm.addEventListener('submit', function(event) {
         window.location.href = "home.html";
     } else {
 
-        errorBox.style.display = "block";
+        errorBox.style.display = "block";    
+        document.getElementById('username').value = "";
+        passwordInput.value = "";
     }
+
+
 });
