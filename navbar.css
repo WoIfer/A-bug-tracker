@@ -122,13 +122,14 @@ body.darkMode .modeTog button:hover {
     border-color: white;
     transform: scale(1.3);     
 }
-.homePageStruct{
+.homePageStruct {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    /* Automatically adjust columns based on screen width */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
     justify-items: center; 
-    gap: 30px; 
-    padding: 50px; 
-    margin-top: 40px;
+    gap: 20px; 
+    padding: 20px; /* Reduced padding for mobile */
+    margin-top: 20px;
 }
 .homeCards{
     background-color: rgb(165, 160, 160);
