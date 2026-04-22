@@ -99,6 +99,7 @@ body {
   height: 100vh;
   z-index: -1;
   overflow: hidden;
+  color: transparent !important;
 }
 .searchForm{
     display: flex;
