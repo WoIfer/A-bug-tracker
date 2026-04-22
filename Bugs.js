@@ -64,7 +64,7 @@ function editIssue(id) {
   const issues = getData("issues");
   const issue = issues.find(i => i.id === id);
   localStorage.setItem("selectedIssue", JSON.stringify(issue));
-  window.location.href = "edit.html";
+  window.location.href = "Edit.html";
 }
 
 function deleteIssue(id) {
