@@ -101,6 +101,7 @@ body {
   overflow: hidden;
   color: transparent !important;
   display: inline-block;
+  
 }
 .searchForm{
     display: flex;
