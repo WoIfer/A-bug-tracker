@@ -66,21 +66,22 @@ body {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-style: italic;
     text-transform: uppercase; 
-    background-image: url('Images/WhatsApp Image 2026-04-19 at 14.08.43.jpeg');
+    background-image: url('Images/bug.jpg');
     background-size: cover; 
     background-position: center; 
+   
     color: transparent;
     background-clip: text;
-    animation: scrollBackground 50s linear infinite;
+    animation: scrollBackground 20s linear infinite;
     filter: invert(1);
 
 }
 @keyframes scrollBackground {
     0% {
-        background-position: center 100%;
+        background-position: center 0%;
     }
     50% {
-        background-position: center 40%;
+        background-position: center 100%;
     }
     100% {
         background-position: center 0%; 
